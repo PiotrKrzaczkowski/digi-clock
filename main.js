@@ -12,7 +12,7 @@ const setDate = () => {
   const minDeg = (mins / 60) * 360 + 90;
 
   const hours = time.getHours();
-  const hourDeg = (hours / 60) * 360 + 90;
+  const hourDeg = (hours / 12) * 360 + 90;
 
   secHand.style.transform = `rotate(${secDeg}deg)`;
   minHand.style.transform = `rotate(${minDeg}deg)`;
